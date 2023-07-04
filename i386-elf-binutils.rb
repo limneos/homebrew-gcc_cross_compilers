@@ -7,10 +7,10 @@ class I386ElfBinutils < Formula
 
   depends_on 'gcc' => :build
   def install
-    ENV['CC'] = '/usr/local/opt/gcc/bin/gcc-13'
-    ENV['CXX'] = '/usr/local/opt/gcc/bin/g++-13'
-    ENV['CPP'] = '/usr/local/opt/gcc/bin/cpp-13'
-    ENV['LD'] = '/usr/local/opt/gcc/bin/gcc-13'
+    ENV['CC'] = '/opt/homebrew/bin/gcc-13'
+    ENV['CXX'] = '/opt/homebrew/bin/g++-13'
+    ENV['CPP'] = '/opt/homebrew/bin/cpp-13'
+    ENV['LD'] = '/opt/homebrew/bin/gcc-13'
 
     mkdir 'build' do
       system '../configure', '--disable-nls', '--target=i386-elf','--disable-werror',
