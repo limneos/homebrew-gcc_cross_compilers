@@ -16,10 +16,10 @@ class I386ElfGcc < Formula
     binutils = Formulary.factory 'i386-elf-binutils'
 
 
-    ENV['CC'] = '/usr/loca/bin/gcc-7'
-    ENV['CXX'] = '/usr/loca/bin/g++-7'
-    ENV['CPP'] = '/usr/loca/bin/cpp-7'
-    ENV['LD'] = '/usr/loca/bin/gcc-7'
+    ENV['CC'] = '/usr/local/bin/gcc-7'
+    ENV['CXX'] = '/usr/local/bin/g++-7'
+    ENV['CPP'] = '/usr/local/bin/cpp-7'
+    ENV['LD'] = '/usr/local/bin/gcc-7'
     ENV['PATH'] += ":#{binutils.prefix/"bin"}"
 
     mkdir 'build' do
